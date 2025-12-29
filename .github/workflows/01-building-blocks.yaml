@@ -1,10 +1,6 @@
 name: workflow-trigger
 
-on:push:
-  branches:
-    - main
-  paths:
-    - 'workflow-trigger/**'
+on: push
 
 jobs:
   echo-hello:
@@ -21,9 +17,6 @@ jobs:
           echo "I will fail"
           exit 1
 
-  echo-goodbye:
-    runs-on: ubuntu-latest
-    steps: 
       - name: Bye 
         run: echp "Goodbye"
 

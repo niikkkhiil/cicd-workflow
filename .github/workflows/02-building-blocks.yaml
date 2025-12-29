@@ -1,0 +1,7 @@
+name: Workflow trigger on actions
+
+on:
+  workflow dispatch:
+  push:
+    branches:
+      - master
